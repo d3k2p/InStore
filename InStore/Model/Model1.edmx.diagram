@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="83ddd0d28293431d9080c0e3490c1801" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Users" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Категория_Пользователя" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Категория_товара" Width="1.5" PointX="7.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Корзина" Width="1.5" PointX="7.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Купоны_и_скидки" Width="1.5" PointX="9.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Отзывы" Width="1.5" PointX="7.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Пользователь" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Продукт" Width="1.5" PointX="9.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Способ_доставки" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Способ_оплаты" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Users_Категория_Пользователя" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Пользователь_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Пользователь_Категория_Пользователя" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Продукт_Категория_товара" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Корзина_Пользователь1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Корзина_Продукт" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Корзина_Способ_доставки" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Корзина_Способ_оплаты" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Купоны_и_скидки_Корзина" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Отзывы_Пользователь" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Продукт_Отзывы" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
