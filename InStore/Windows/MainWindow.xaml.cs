@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InStore
+namespace InStore.Windows
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,6 +23,27 @@ namespace InStore
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            Profile profile = new Profile();
+            profile.Show();
+            this.Close();
+        }
+
+        private void ProductsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Products products = new Products();
+            products.Show();
+            this.Close();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

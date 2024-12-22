@@ -15,7 +15,7 @@ using System.Data.SqlClient;
 using System.Data;
 using InStore.Model;
 
-namespace InStore
+namespace InStore.Windows
 {
     /// <summary>
     /// Логика взаимодействия для Login.xaml
@@ -33,7 +33,7 @@ namespace InStore
        
         private void AutorizationButton_Click(object sender, RoutedEventArgs e)
         {   
-            var CurrentUser = AppData.db.Users.FirstOrDefault(u => u.Login == LoginTextBox.Text && u.Password == PasswordTextBox.Password);
+            var CurrentUser = AppData.db.Пользователь.FirstOrDefault(u => u.Login == LoginTextBox.Text && u.Пароль == PasswordTextBox.Password);
             
             if (CurrentUser != null)
             {

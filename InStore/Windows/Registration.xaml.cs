@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace InStore
+namespace InStore.Windows
 {
     /// <summary>
     /// Логика взаимодействия для Registration.xaml
@@ -28,15 +28,15 @@ namespace InStore
 
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {
-            Users users = new Users();
+            Пользователь users = new Пользователь();
 
             users.Login = LoginTXB.Text;
-            users.Password = PasswordTXB.Password;
+            users.Пароль = PasswordTXB.Password;
 
             var CurrentRole = Role.SelectedItem as Категория_Пользователя;
-            users.id_Категории_Пользователя = CurrentRole.id_Категории_пользователя;   
+            users.id_Категории_пользователя = CurrentRole.id_Категории_пользователя;   
 
-            AppData.db.Users.Add(users);
+            AppData.db.Пользователь.Add(users);
             AppData.db.SaveChanges();
             MessageBox.Show("Пользователь успешно зарегистрирован!");
 

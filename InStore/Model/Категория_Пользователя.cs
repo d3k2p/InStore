@@ -17,15 +17,12 @@ namespace InStore.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Категория_Пользователя()
         {
-            this.Users = new HashSet<Users>();
             this.Пользователь = new HashSet<Пользователь>();
         }
     
         public int id_Категории_пользователя { get; set; }
         public string Название_категории_пользователя { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Users> Users { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Пользователь> Пользователь { get; set; }
     }

@@ -25,7 +25,6 @@ namespace InStore.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Категория_Пользователя> Категория_Пользователя { get; set; }
         public virtual DbSet<Категория_товара> Категория_товара { get; set; }
         public virtual DbSet<Корзина> Корзина { get; set; }

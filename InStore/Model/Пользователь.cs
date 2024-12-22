@@ -27,9 +27,8 @@ namespace InStore.Model
         public string Электронная_почта { get; set; }
         public string Пароль { get; set; }
         public Nullable<int> id_Категории_пользователя { get; set; }
-        public Nullable<int> id_User { get; set; }
+        public string Login { get; set; }
     
-        public virtual Users Users { get; set; }
         public virtual Категория_Пользователя Категория_Пользователя { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Корзина> Корзина { get; set; }
